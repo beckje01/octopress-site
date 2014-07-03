@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
+url: http://beckje01.com
 title: Jeff Beck
 subtitle: A blogging framework for hackers.
 author: Jeff Beck
@@ -95,7 +95,7 @@ disqus_short_name: beckje01blog
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-41150211-4
 
 # Facebook Like
 facebook_like: false
