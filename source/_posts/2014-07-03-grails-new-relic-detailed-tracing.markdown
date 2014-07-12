@@ -39,5 +39,4 @@ At this point your code is ready to give more detailed transactions, but the age
   enable_custom_tracing: true
 ```
 
-
 Now you will get any custom tracing added to your application as well as custom tracing from libraries.

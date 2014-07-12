@@ -7,18 +7,27 @@ module Jekyll
 
 	class Gravatar < Liquid::Tag
 
+
+
 		def initialize(tag_name, text, tokens)
 		  super
+			@cache = Hash.new
 		end
 
 		def get_profile(hash)
 			return nil unless hash.is_a? String
 			# get JSON for profile
-			uri = URI("http://en.gravatar.com/#{hash}.json")
-			res = Net::HTTP.get_response(uri)
+			if @cache.key?(hash)
+				res = cache.fetch(hash)
+			else
+				uri = URI("http://en.gravatar.com/#{hash}.json")
+				res = Net::HTTP.get_response(uri)
+			end
+
 			if not res.is_a?(Net::HTTPSuccess)
 				return nil
 			else
+				@cache[hash] = res
 				# parse JSON and return simplified hash of information
 				profile_string = res.body
 				profile = JSON.parse(profile_string)
