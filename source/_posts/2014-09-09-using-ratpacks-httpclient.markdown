@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Using Ratpack's HttpClient"
+date: 2014-09-09 13:22:50 -0500
+comments: true
+published: false
+categories:
+ - Ratpack
+ - Groovy
+---
+Ratpack comes with a very powerful HTTP Client built into the core. The client is based on Netty and is fully asynchronous and non-blocking.
+
+The basic get request:
+``` groovy
+httpClient.get {
+    it.url.set(new URI("http://example.gas"))
+} onError {
+    render "Http Request Failed"
+} then {
+    render "Got a ${it.statusCode} status with body of:\n\n${it.body.text}"
+}
+```
+
+We are using the syntactic sugar method of `httpClient.get` to specify which HTTP method to use, it will return a Ratpack Promise. We can easily work with this promise if you want to deal with the error case you must start with onError and then deal with the success case.
