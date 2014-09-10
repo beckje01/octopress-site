@@ -45,6 +45,24 @@ httpClient.get {
     render "Got a ${it.statusCode} status with body of:\n\n${it.body.text}"
 }
 ```
-`onError` will pass in a throwable to the closure that you can log or do what ever work you would like in the case of a failure.
+`onError` will pass in a throwable to the closure that you can log or do whatever work you would like in the case of a failure.
 
-Ratpack Promises are very powerful and with these simple interactions it should be very easy to build out asynchronous / non-blocking applications.
+## What not to do
+
+You shouldn't try to attach more than once to a Promise. So don't do the following:
+
+``` groovy Don't do this
+
+def p = httpClient.get {
+  it.url.set(new URI("http://example.com"))
+}
+
+p.onError {
+  println it
+}
+
+p.then {
+  println it.statusCode
+}
+
+```
