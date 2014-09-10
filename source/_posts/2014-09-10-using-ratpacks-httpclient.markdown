@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Using Ratpack's HttpClient"
-date: 2014-09-09 13:22:50 -0500
+title: Using Ratpack's HttpClient
+date: 2014-09-10 13:30
 comments: true
 published: false
 categories:
- - Ratpack
- - Groovy
+- Ratpack
+- Groovy
 ---
 Ratpack comes with a very powerful HTTP Client built into the core. The client is based on Netty and is fully asynchronous and non-blocking.
 
