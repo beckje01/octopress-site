@@ -21,4 +21,6 @@ httpClient.get {
 }
 ```
 
-We are using the syntactic sugar method of `httpClient.get` to specify which HTTP method to use, it will return a Ratpack Promise. We can easily work with this promise if you want to deal with the error case you must start with onError and then deal with the success case.
+<!-- more -->
+
+We are using the syntactic sugar method of `httpClient.get` to specify which HTTP method to use, it will return a [Ratpack Promise](/blog/2014/09/10/ratpack-promise/). 
