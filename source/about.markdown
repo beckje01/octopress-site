@@ -11,7 +11,7 @@ navbar: "About"
 
 # $ whoami
 
-I am a Tech Lead at ReachLocal, based in Minneapolis, Minnesota. I have been doing Grails since 2010.
+I am an Engineer at SmartThings, based in Minneapolis, Minnesota. I have been doing Grails since 2010.
 
 I try to be an active member of the local Groovy community as well as an open source contributor, contributing to Grails plugins and [Ratpack](http://ratpack.io) in my free time. I am very interested in creating code that is easy to maintain and share not only within a team but in the broader community as well.
 
