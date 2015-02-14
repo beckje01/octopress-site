@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Grails Integration Testing of Complex Transactions"
-date: 2014-10-03 09:29:53 -0500
+title: Grails Integration Testing of Complex Transactions
+date: 2015-02-14 15:41
 comments: true
-published: false
+published: true
 categories:
- - Groovy
- - Grails
+- Groovy
+- Grails
 ---
 
 Integration testing complex transactions in grails can be tricky due to the default behavior of wrapping integration tests in transactions and rolling them back when complete.
