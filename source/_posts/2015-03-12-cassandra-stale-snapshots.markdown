@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Cassandra Stale Snapshots"
-date: 2015-03-12 09:47:19 -0500
+title: Cassandra Stale Snapshots
+date: 2015-03-12 09:47:19.000000000 -05:00
 comments: true
-published: false
+published: true
 categories:
- - Cassandra
+- Cassandra
 ---
 While working with Cassandra we found that sometimes snapshots get left around after repairs fail or have issues. These can cause 100's of Gigs of space to just be wasted. This can add up quickly and cause issues. On a node with low disk space we can check for stale snapshots the following way.
 
