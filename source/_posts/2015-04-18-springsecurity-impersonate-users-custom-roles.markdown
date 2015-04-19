@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "SpringSecurity Impersonate Users Custom Roles"
-date: 2015-04-13 00:20:15 +0200
+title: SpringSecurity Impersonate Users Custom Roles
+date: 2015-04-18 20:54
 comments: true
-published: false
+published: true
 categories:
 - Groovy
 - Grails
