@@ -23,7 +23,7 @@ grails:
                 - example.config
 ```
 
-I found that while the beans were all wired correctly and `@Autowired` all worked correctly, any mappings with `@RequestMapping` where always returning a 404. Everything looked wired correctly but Grails wasn't letting any requests through.
+I found that while the beans were all wired correctly and `@Autowired` all worked correctly, but any mappings with `@RequestMapping` where always returning a 404. Everything looked wired correctly but Grails wasn't letting any requests through.
 
 So I switched over to using `@ComponentScan` then the requests were properly mapped and everything started working.
 
