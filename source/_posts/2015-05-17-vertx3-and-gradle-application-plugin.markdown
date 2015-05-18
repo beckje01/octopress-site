@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Vertx3 and Gradle Application Plugin"
-date: 2015-05-17 16:45:08 -0500
+title: Vertx3 and Gradle Application Plugin
+date: 2015-05-17 16:45:08.000000000 -05:00
 comments: true
-published: false
+published: true
 categories:
 - Vertx3
 - Gradle
