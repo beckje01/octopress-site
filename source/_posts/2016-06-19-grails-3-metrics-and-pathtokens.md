@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Grails 3 Metrics and Path Variables"
-date: 2016-06-19 15:25:22 -0500
+title: Grails 3 Metrics and Path Variables
+date: 2016-06-19 16:10
 comments: true
-published: false
+published: true
 categories:
 - Groovy
 - Grails
