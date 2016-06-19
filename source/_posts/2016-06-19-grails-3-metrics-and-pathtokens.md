@@ -27,3 +27,5 @@ I just keep the metrics endpoint off since the health-checks are useful and some
 endpoints:
    enabled: false
 ```
+
+Thanks to [Ryan Vanderwerf](https://twitter.com/RyanVanderwerf) for help on this issue.
