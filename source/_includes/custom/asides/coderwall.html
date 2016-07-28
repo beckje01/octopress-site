@@ -31,7 +31,7 @@
             , dataType: 'jsonp'
             , error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); }
             , success: function(res) {
-                render(options, res.data.badges);
+                render(options, res.user.badges);
             }
           });
         }
