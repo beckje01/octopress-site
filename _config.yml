@@ -26,11 +26,12 @@ email: beckje01@gmail.com
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /
+baseurl: ""
+root: ""
 permalink: /blog/:year/:month/:day/:title/
 source: source
 destination: public
-plugins: plugins
+plugins_dir: plugins
 code_dir: downloads/code
 category_dir: blog/categories
 markdown: rdiscount
@@ -39,7 +40,10 @@ rdiscount:
     - autolink
     - footnotes
     - smart
-pygments: false # default python pygments have been replaced by pygments.rb
+highlighter: false # default python pygments have been replaced by pygments.rb
+
+sass:
+  style: compact 
 
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
@@ -51,7 +55,7 @@ titlecase: true       # Converts page and post titles to titlecase
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
 #custom/asides/stackoverflow.html
-default_asides: [custom/asides/gravatar.html, asides/recent_posts.html, asides/googleplus.html, custom/asides/lanyrd.html,custom/asides/coderwall.html]
+default_asides: [custom/asides/gravatar.html, asides/recent_posts.html, asides/googleplus.html,custom/asides/coderwall.html]
 #default_asides: [ ]
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.

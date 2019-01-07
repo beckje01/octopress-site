@@ -1,5 +1,7 @@
 .bundle
 .DS_Store
+.vscode
+.code-highlighter-cache
 .sass-cache
 .gist-cache
 .pygments-cache
@@ -12,3 +14,4 @@ source/stylesheets/screen.css
 vendor
 node_modules
 .preview-mode
+.deploy

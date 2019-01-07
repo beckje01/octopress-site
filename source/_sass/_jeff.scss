@@ -1,0 +1,7 @@
+
+// Random parts of compass pulled out to make it all work
+
+@mixin hover-link {
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: underline; } }

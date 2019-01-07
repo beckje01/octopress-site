@@ -1,0 +1,4 @@
+method: git
+site_dir: public
+git_url: git@github.com:beckje01/beckje01.github.io.git 
+git_branch: master
