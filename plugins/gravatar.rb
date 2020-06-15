@@ -20,7 +20,7 @@ module Jekyll
 			if @cache.key?(hash)
 				res = cache.fetch(hash)
 			else
-				uri = URI("http://en.gravatar.com/#{hash}.json")
+				uri = URI("https://en.gravatar.com/#{hash}.json")
 				res = Net::HTTP.get_response(uri)
 			end
 
@@ -69,7 +69,7 @@ module Jekyll
 				"<div style='clear:both'></div>" +
 				"</div>" +
 				"<div class='grav-cardarrow'></div>" +
-				"<div class='grav-tag'><a href='http://gravatar.com' title='Powered by Gravatar.com'" +
+				"<div class='grav-tag'><a href='https://gravatar.com' title='Powered by Gravatar.com'" +
 			    "target='_blank'>&nbsp;</a></div>"
 			return html
 		end
@@ -93,7 +93,7 @@ module Jekyll
 			profile = get_profile(gravatar_hash)
 
 			# compile the full Gravatar URL
-			image_src = "http://www.gravatar.com/avatar/#{gravatar_hash}"
+			image_src = "https://www.gravatar.com/avatar/#{gravatar_hash}"
 
 			profile[:image] = image_src
 			# output the profile hash to access in template
